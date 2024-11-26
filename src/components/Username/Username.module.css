@@ -1,0 +1,11 @@
+.username {
+  font-size: 0.88em;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  color: var(--bluesky-card-secondary);
+  place-self: start;
+}
+
+.clickable:hover {
+  text-decoration: underline;
+}

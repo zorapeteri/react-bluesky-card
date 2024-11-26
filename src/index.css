@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
+
+.react-bluesky-card__username-in-post,
+.react-bluesky-card__hashtag-in-post,
+.react-bluesky-card__link-in-post {
+  color: var(--bluesky-card-accent);
+  text-decoration: none;
+}
+
+.react-bluesky-card__username-in-post:hover,
+.react-bluesky-card__hashtag-in-post:hover,
+.react-bluesky-card__link-in-post:hover {
+  text-decoration: underline;
+}

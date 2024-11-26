@@ -1,0 +1,24 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  place-content: center;
+  background: var(--bluesky-card-background);
+  border: 1px solid var(--bluesky-card-border);
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 0.7em 0.95em;
+  border-radius: 0.7em;
+  row-gap: 0.6em;
+  width: fit-content;
+}
+
+.blurredBackground,
+.gradientBackground {
+  border: none;
+}
+
+.fitInsideContainer {
+  width: 100%;
+  height: 100%;
+}
