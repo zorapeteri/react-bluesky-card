@@ -1,7 +1,7 @@
 {
   "name": "react-bluesky-card",
   "description": "A React component to display Bluesky posts",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "type": "module",
   "scripts": {
     "dev": "vite",
