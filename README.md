@@ -4,10 +4,10 @@
 
 A Bluesky Card component you can use easily in your React projects. It doesn't rely on the Bluesky API but instead lets you feed in all information about the posts you're displaying. This way you can create cards for fictional Bluesky posts, or ones that have been deleted.
 
-<img src="https://github.com/user-attachments/assets/ca3c7f5f-6a1d-4208-818e-92e176d33d80" width="500">
+<img src="https://github.com/user-attachments/assets/2f28ef03-d31f-48d7-aad0-40cb4c4315d7" width="500">
 <br>
 <br>
-<img src="https://github.com/user-attachments/assets/9601f52b-0980-4834-a743-8a223e81e274" width="400">
+<img src="https://github.com/user-attachments/assets/c2b1343e-3439-42ab-8ae0-e80ddb35cb0b" width="500">
 
 [:butterfly: Demo and documentation](https://zorapeteri.github.io/react-bluesky-card)
 
@@ -23,17 +23,17 @@ yarn add react-bluesky-card
 
 ## Features
 
-- [x] Responsive component
-- [x] Light, dim and dark themes
-- [x] Dark mode preference support
-- [x] Gradient and blurred container styles
-- [x] styled-components and emotion support
-- [x] TypeScript support
-- [x] Support for images in posts
-- [x] Support for @mentions in posts
-- [x] Support for links in posts
-- [x] Support for hashtags in posts
-- [x] Display number of replies, reposts and likes
+- Responsive component
+- Light, dim and dark themes
+- Dark mode preference support
+- Gradient and blurred container styles
+- styled-components and emotion support
+- TypeScript support
+- Support for images in posts
+- Support for @mentions in posts
+- Support for links in posts
+- Support for hashtags in posts
+- Display number of replies, reposts and likes
 
 ## Server-side rendering
 

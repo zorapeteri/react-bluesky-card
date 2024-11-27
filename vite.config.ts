@@ -16,14 +16,18 @@ export default defineConfig({
     lib: {
       entry: resolve(__dirname, 'src/main.tsx'),
       name: 'ReactBlueskyCard',
-      formats: ['es'],
-      // the proper extensions will be added
       fileName: 'react-bluesky-card',
     },
     rollupOptions: {
       // make sure to externalize deps that shouldn't be bundled
       // into your library
       external: ['react', 'react-dom'],
+      output: {
+        globals: {
+          react: 'React',
+          'react-dom': 'ReactDOM',
+        },
+      },
     },
   },
 });

@@ -16,7 +16,8 @@
   "module": "./dist/react-bluesky-card.js",
   "exports": {
     ".": {
-      "import": "./dist/react-bluesky-card.js"
+      "import": "./dist/react-bluesky-card.js",
+      "require": "./dist/react-bluesky-card.umd.cjs"
     },
     "./style.css": "./dist/react-bluesky-card.css"
   },
