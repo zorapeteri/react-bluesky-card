@@ -1,7 +1,7 @@
 /* eslint-disable no-cond-assign, no-plusplus, no-useless-escape, no-param-reassign */
 
 import React, { useEffect } from 'react';
-import globalClassName from 'utils/globalClassName';
+import globalClassName from '../utils/globalClassName';
 
 function getGroups(str: string, regex: RegExp, index: number) {
   let m;

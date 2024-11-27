@@ -1,7 +1,6 @@
-import React from 'react';
-import className from 'utils/className';
-import globalClassName from 'utils/globalClassName';
-import { BlueskyCardProps } from 'index';
+import className from '../../utils/className';
+import globalClassName from '../../utils/globalClassName';
+import { BlueskyCardProps } from '../../main';
 import css from './Name.module.css';
 
 type NameProps = Pick<BlueskyCardProps['author'], 'name'> &

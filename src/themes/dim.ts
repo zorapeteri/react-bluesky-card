@@ -1,4 +1,4 @@
-import { BlueskyCardTheme } from 'themes';
+import { BlueskyCardTheme } from '.';
 
 const DimTheme: BlueskyCardTheme = {
   primary: '#F1F3F5',

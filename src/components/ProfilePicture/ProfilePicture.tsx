@@ -1,7 +1,6 @@
-import { BlueskyCardProps } from 'index';
-import React from 'react';
-import className from 'utils/className';
-import globalClassName from 'utils/globalClassName';
+import { BlueskyCardProps } from '../../main';
+import className from '../../utils/className';
+import globalClassName from '../../utils/globalClassName';
 import css from './ProfilePicture.module.css';
 
 type ProfilePictureProps = Pick<BlueskyCardProps['author'], 'image'> &

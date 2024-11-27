@@ -1,8 +1,7 @@
-import React from 'react';
-import className from 'utils/className';
-import globalClassName from 'utils/globalClassName';
-import formatEngagement from 'utils/formatEngagement';
-import { BlueskyCardProps } from 'index';
+import className from '../../utils/className';
+import globalClassName from '../../utils/globalClassName';
+import formatEngagement from '../../utils/formatEngagement';
+import { BlueskyCardProps } from '../../main';
 import css from './Engagement.module.css';
 import EngagementIcons from './EngagementIcons';
 
@@ -15,10 +14,6 @@ const singular = {
 } as const;
 
 function Engagement({ replies = 0, reposts = 0, likes = 0 }: EngagementProps) {
-  if (!(replies || reposts || likes)) {
-    return null;
-  }
-
   const amounts = { replies, reposts, likes };
 
   return (

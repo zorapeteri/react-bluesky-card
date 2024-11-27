@@ -1,5 +1,4 @@
-import React from 'react';
-import { BlueskyCardProps } from 'index';
+import { BlueskyCardProps } from '../../main';
 import ProfilePicture from '../ProfilePicture';
 import Name from '../Name';
 import Username from '../Username';

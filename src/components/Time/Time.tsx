@@ -1,7 +1,6 @@
-import { BlueskyCardProps } from 'index';
-import React from 'react';
-import formatPostTime from 'utils/formatPostTime';
-import globalClassName from 'utils/globalClassName';
+import { BlueskyCardProps } from '../../main';
+import formatPostTime from '../../utils/formatPostTime';
+import globalClassName from '../../utils/globalClassName';
 import css from './Time.module.css';
 
 type TimeProps = Pick<BlueskyCardProps, 'time' | 'permalink'>;

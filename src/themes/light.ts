@@ -1,4 +1,4 @@
-import { BlueskyCardTheme } from 'themes';
+import { BlueskyCardTheme } from '.';
 
 const LightTheme: BlueskyCardTheme = {
   primary: '#0B0F14',

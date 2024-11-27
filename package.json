@@ -1,19 +1,46 @@
 {
   "name": "react-bluesky-card",
-  "version": "0.0.1",
   "description": "A React component to display Bluesky posts",
-  "main": "lib/index.js",
+  "version": "0.0.1",
+  "type": "module",
   "scripts": {
-    "build": "NODE_ENV=production webpack",
-    "dev-build": "webpack",
-    "lint": "eslint --fix --ext .js,.ts,.tsx src/",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
   },
   "files": [
-    "lib"
+    "dist"
   ],
+  "main": "./dist/react-bluesky-card.js",
+  "module": "./dist/react-bluesky-card.js",
+  "exports": {
+    ".": {
+      "import": "./dist/react-bluesky-card.js"
+    },
+    "./style.css": "./dist/react-bluesky-card.css"
+  },
+  "peerDependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.15.0",
+    "@types/node": "^22.10.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.15.0",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.14",
+    "globals": "^15.12.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "typescript": "~5.6.2",
+    "typescript-eslint": "^8.15.0",
+    "vite": "^6.0.1",
+    "vite-plugin-dts": "^4.3.0"
+  },
   "author": "Zora Peteri (https://github.com/zorapeteri)",
   "homepage": "https://github.com/zorapeteri/react-bluesky-card#readme",
   "repository": {
@@ -34,42 +61,5 @@
     "responsive",
     "typescript"
   ],
-  "license": "MIT",
-  "devDependencies": {
-    "@babel/core": "^7.26.0",
-    "@storybook/addon-actions": "^8.4.5",
-    "@storybook/addon-essentials": "^8.4.5",
-    "@storybook/addon-interactions": "^8.4.5",
-    "@storybook/addon-links": "^8.4.5",
-    "@storybook/addon-webpack5-compiler-babel": "^3.0.3",
-    "@storybook/react": "^8.4.5",
-    "@storybook/react-webpack5": "^8.4.5",
-    "@svgr/webpack": "^8.1.0",
-    "@types/react": "^18.3.12",
-    "@types/react-dom": "^18.3.1",
-    "@typescript-eslint/eslint-plugin": "^8.15.0",
-    "@typescript-eslint/parser": "^8.15.0",
-    "babel-loader": "^9.2.1",
-    "css-loader": "^7.1.2",
-    "eslint": "^9.15.0",
-    "eslint-plugin-import": "^2.31.0",
-    "eslint-plugin-jsx-a11y": "^6.10.2",
-    "eslint-plugin-react": "^7.37.2",
-    "eslint-plugin-react-hooks": "^5.0.0",
-    "eslint-plugin-storybook": "^0.11.1",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "storybook": "^8.4.5",
-    "style-loader": "^4.0.0",
-    "ts-loader": "^9.5.1",
-    "typescript": "^5.7.2",
-    "url-loader": "^4.1.1",
-    "use-resize-observer": "^9.1.0",
-    "webpack": "^5.96.1",
-    "webpack-cli": "^5.1.4"
-  },
-  "peerDependencies": {
-    "react": ">= 16",
-    "react-dom": ">= 16"
-  }
+  "license": "MIT"
 }

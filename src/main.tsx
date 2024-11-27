@@ -1,13 +1,13 @@
 import React from 'react';
-import UserDetails from 'components/UserDetails';
-import Time from 'components/Time';
-import Text from 'components/Text';
-import Container from 'components/Container';
-import Engagement from 'components/Engagement';
-import './index.css';
-import Images from 'components/Images';
+import UserDetails from './components/UserDetails';
+import Time from './components/Time';
+import Text from './components/Text';
+import Container from './components/Container';
+import Engagement from './components/Engagement';
+import './main.css';
+import Images from './components/Images';
 import { ThemeOption, BlueskyCardColors } from './themes';
-import BlueskyLogo from 'components/BlueskyLogo';
+import BlueskyLogo from './components/BlueskyLogo';
 
 export type BlueskyCardProps = React.HTMLAttributes<HTMLDivElement> & {
   author: {
@@ -31,7 +31,6 @@ export type BlueskyCardProps = React.HTMLAttributes<HTMLDivElement> & {
   colors?: BlueskyCardColors;
   gradientBackground?: boolean;
   blurredBackground?: boolean;
-  fitInsideContainer?: boolean;
   showTime?: boolean;
   showEngagement?: boolean;
   showBlueskyLogo?: boolean;

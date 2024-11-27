@@ -1,4 +1,4 @@
-import { BlueskyCardColors, BlueskyCardTheme } from 'themes';
+import { BlueskyCardColors, BlueskyCardTheme } from '../themes';
 
 const colorPrefix = '--bluesky-card-';
 

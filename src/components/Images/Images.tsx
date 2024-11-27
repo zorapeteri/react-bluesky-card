@@ -1,7 +1,7 @@
-import React, { useRef } from 'react';
-import className from 'utils/className';
-import globalClassName from 'utils/globalClassName';
-import { BlueskyCardProps } from 'index';
+import { useRef } from 'react';
+import className from '../../utils/className';
+import globalClassName from '../../utils/globalClassName';
+import { BlueskyCardProps } from '../../main';
 import css from './Images.module.css';
 
 type ImagesProps = Pick<BlueskyCardProps, 'images'>;

@@ -1,4 +1,4 @@
-import { ThemeOption } from 'themes';
+import { ThemeOption } from '../themes';
 import usePrefersDarkMode from './usePrefersDarkMode';
 
 const useTheme = (theme: ThemeOption | undefined) => {
