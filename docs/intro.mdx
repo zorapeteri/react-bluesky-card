@@ -1,0 +1,79 @@
+---
+sidebar_position: 1
+slug: /
+---
+
+# Introduction
+
+## Installation
+
+```bash
+npm i react-bluesky-card
+```
+
+or
+
+```bash
+yarn add react-bluesky-card
+```
+
+## Importing
+
+```ts
+import BlueskyCard from 'react-bluesky-card';
+import 'react-bluesky-card/style.css';
+```
+
+## Basic setup
+
+Here's how to set up a card with basic information:
+
+```jsx live
+<BlueskyCard
+  author={{
+    name: 'GM Connie Chang 🌈🐸',
+    username: 'byconniechang.bsky.social',
+    image: 'img/byconniechang.jpg',
+  }}
+  text="Soooo how are y’all pronouncing “bsky” in your heads, because it’s “bisky” to me (like a biscuit)"
+  time={new Date('2024/11/12 10:31Z')}
+  engagement={{
+    likes: 200,
+    reposts: 15,
+    replies: 57,
+  }}
+  permalink="https://bsky.app/profile/byconniechang.bsky.social/post/3larv6imprc2y" // optional
+/>
+```
+
+## Adding images
+
+You can add images to a post by using the `images` prop. You have to pass in an array of objects that have a `src` property with the URL to your images.
+A maximum of 4 images is allowed within a post.
+
+```jsx live
+<BlueskyCard
+  author={{
+    name: 'matt klinman',
+    username: 'mattklinman.bsky.social',
+    image: 'img/mattklinman.jpg',
+  }}
+  text="wednesday night, time to sterilize my toilet paper for the rest of the week"
+  images={[
+    { src: 'img/toiletpaper.jpg' },
+    { src: 'img/toiletpaper.jpg' },
+    { src: 'img/toiletpaper.jpg' },
+  ]}
+  time={new Date('2024/11/28 01:35Z')}
+  engagement={{
+    likes: 4,
+    reposts: 0,
+    replies: 0,
+  }}
+  permalink="https://bsky.app/profile/mattklinman.bsky.social/post/3lbxwfvkk4k2q"
+/>
+```
+
+## Server-side rendering
+
+React Bluesky Card can only be rendered on the client side as it loads its CSS directly into the DOM. To make it work with SSR, try importing the package dynamically.

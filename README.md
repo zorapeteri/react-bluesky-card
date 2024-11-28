@@ -1,41 +1,41 @@
-# react-bluesky-card
+# Website
 
-[![NPM](https://img.shields.io/npm/v/react-bluesky-card.svg)](https://www.npmjs.com/package/react-bluesky-card)
+This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
-A Bluesky Card component you can use easily in your React projects. It doesn't rely on the Bluesky API but instead lets you feed in all information about the posts you're displaying. This way you can create cards for fictional Bluesky posts, or ones that have been deleted.
+### Installation
 
-<img src="https://github.com/user-attachments/assets/2f28ef03-d31f-48d7-aad0-40cb4c4315d7" width="500">
-<br>
-<br>
-<img src="https://github.com/user-attachments/assets/c2b1343e-3439-42ab-8ae0-e80ddb35cb0b" width="500">
-
-[:butterfly: Demo and documentation](https://zorapeteri.github.io/react-bluesky-card)
-
----
-
-## Installation
-
-```bash
-npm i react-bluesky-card
-# or
-yarn add react-bluesky-card
+```
+$ yarn
 ```
 
-## Features
+### Local Development
 
-- [x] Responsive component
-- [x] Light, dim and dark themes
-- [x] Dark mode preference support
-- [x] Gradient and blurred container styles
-- [x] styled-components and emotion support
-- [x] TypeScript support
-- [x] Support for images in posts
-- [x] Support for @mentions in posts
-- [x] Support for links in posts
-- [x] Support for hashtags in posts
-- [x] Display number of replies, reposts and likes
+```
+$ yarn start
+```
 
-## Server-side rendering
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
-`react-bluesky-card` can only be rendered on the client side as it loads its CSS directly into the DOM.
-To make it work with SSR, try importing the package dynamically.
+### Build
+
+```
+$ yarn build
+```
+
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
+
+### Deployment
+
+Using SSH:
+
+```
+$ USE_SSH=true yarn deploy
+```
+
+Not using SSH:
+
+```
+$ GIT_USER=<Your GitHub username> yarn deploy
+```
+
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.

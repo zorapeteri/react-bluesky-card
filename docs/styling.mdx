@@ -1,0 +1,139 @@
+---
+sidebar_position: 3
+slug: /style
+---
+
+# Styling
+
+## Themes
+
+The `theme` prop can be set to `light`, `dim` or `dark`. Try it out!
+
+```jsx live
+<BlueskyCard {...zucchiniPost} theme="dark" />
+```
+
+## Colors
+
+The colors of the pre-defined themes can be extended.
+
+<table>
+  <thead>
+    <tr>
+      <th>Color setting</th>
+      <th>Used</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>primary</td>
+      <td>Author name, post text</td>
+    </tr>
+    <tr>
+      <td>secondary</td>
+      <td>Time, username</td>
+    </tr>
+    <tr>
+      <td>accent</td>
+      <td>Mentions, links, hashtags</td>
+    </tr>
+    <tr>
+      <td>muted</td>
+      <td>Engagement</td>
+    </tr>
+    <tr>
+      <td>background</td>
+      <td>Background color of the container</td>
+    </tr>
+    <tr>
+      <td>border</td>
+      <td>Border color of the container</td>
+    </tr>
+  </tbody>
+</table>
+
+```jsx live
+<BlueskyCard
+  className="with-background-image"
+  {...zucchiniPost}
+  colors={{
+    primary: '#ffffff',
+    secondary: '#a9e0fe',
+    accent: '#1C26FF',
+    muted: '#FDFEEC',
+    background: '#3AAFB9',
+    border: '#ffff00',
+  }}
+/>
+```
+
+## Gradient background
+
+Passing in the `gradientBackground` prop to the component will create a gradient background to the container based on the background color of the active theme.
+
+```jsx live
+<BlueskyCard
+  className="with-background-image"
+  {...zucchiniPost}
+  theme="light"
+  gradientBackground
+/>
+```
+
+## Blurred background
+
+Passing in the `blurredBackground` prop to the component will create a blurred effect on the background of the container.
+
+```jsx live
+<BlueskyCard
+  className="with-background-image"
+  {...zucchiniPost}
+  theme="light"
+  blurredBackground
+/>
+```
+
+## Accessing the DOM node
+
+Any prop that's a valid HTML5 attribute can be passed in to the component, and its main div will get those attributes, including `className` and `style`. This way the component can easily be used with libraries like styled components.
+
+```jsx live
+<BlueskyCard
+  className="with-background-image"
+  {...zucchiniPost}
+  style={{
+    transform: 'rotate(5deg)',
+  }}
+/>
+```
+
+## Classnames
+
+The component intentionally exposes classnames on its elements for you to control from your own stylesheet. All classnames start with the `react-bluesky-card` prefix.
+
+<details>
+  <summary>Exposed classnames</summary>
+  <ul>
+    <li>react-bluesky-card__container</li>
+    <li>react-bluesky-card__author-username</li>
+    <li>react-bluesky-card__author-image</li>
+    <li>react-bluesky-card__time</li>
+    <li>react-bluesky-card__source</li>
+    <li>react-bluesky-card__text</li>
+    <li>react-bluesky-card__imageContainer</li>
+    <li>react-bluesky-card__image</li>
+    <li>react-bluesky-card__bluesky-logo</li>
+    <li>react-bluesky-card__engagement-container</li>
+    <li>react-bluesky-card__replies</li>
+    <li>react-bluesky-card__reposts</li>
+    <li>react-bluesky-card__likes</li>
+  </ul>
+
+</details>
+
+```css
+/* example */
+.react-bluesky-card__username {
+  display: none;
+}
+```
