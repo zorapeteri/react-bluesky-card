@@ -16,7 +16,7 @@ const zucchiniPost = {
     replies: 68,
     reposts: 40,
   },
-  time: new Date('2024/11/26 02:12Z'),
+  time: new Date('2024-11-26T02:12:00Z'),
 };
 
 const BlueskyCard = (props) => {
