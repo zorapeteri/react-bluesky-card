@@ -5,6 +5,14 @@ slug: /style
 
 # Styling
 
+## Font size
+
+All elements inside the component use `em` units, meaning that they scale depending on the `font-size` of the parent container. You can use `className` or `style` on `BlueskyCard` to increase the size of all layout items.
+
+```jsx live
+<BlueskyCard {...zucchiniPost} style={{ fontSize: '22px' }} />
+```
+
 ## Themes
 
 The `theme` prop can be set to `light`, `dim` or `dark`. Try it out!
