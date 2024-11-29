@@ -19,9 +19,11 @@ const Images = ({ images = [] }: ImagesProps) => {
           gridTemplateColumns: count > 1 ? '1fr 1fr' : '1fr',
         }}
       >
-        {images.slice(0, 4).map(({ src }, index) => (
+        {images.slice(0, 4).map(({ src, alt }, index) => (
           <div
             {...className(globalClassName('image'), css.imageBackground)}
+            role="img"
+            aria-label={alt}
             key={src}
             style={{
               backgroundImage: `url(${src})`,
